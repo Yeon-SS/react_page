@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+
+* {box-sizing: border-box;}
+a { outline:0; text-decoration:none; color:#555; }
+body { font:12px/1.6 arial; color:#555; } 
+
+header h1 { text-align: center;margin:0 auto;height:150px;line-height: 150px;}
+header h1 a { color:#121212;font-family:righteous;font-size:30px;}
+
+#menu {height: 50px; line-height: 50px; background: #131313;text-align: center;}
+#menu ul {width:60%; margin:0 auto;display: flex;}
+#menu ul li {width:25%;padding-right:3px; }
+#menu ul li a {text-decoration: none; color:#fff;font-size:0.8rem;}
+
+.submenu {width:100%;background: #131313;display: none;
+    z-index:9999;position: absolute;left:0;top:200px;padding-bottom:2rem;}
+.box {width:60%;margin:0 auto;display: flex;text-align: center;}
+.box ul {width:25%;}
+.box ul a {color:#fff;}
+
+#main {width:70%; margin:2rem auto;}
+#main ul {display:flex; }
+#main ul li {width:25%;padding-right:3px;}
+#main ul li img {width:100%;}
+#main h2 {text-align: center; margin:1rem 0;}
+
+
+#main1 {width:70%; margin:2rem auto;}
+#main1 ul {display:flex;}
+#main1 ul li {width:25%;padding-right:3px;}
+#main1 ul li img {width:100%;}
+#main1 h2 {text-align: center; margin:1rem 0;}
+
+#banner, #ban1 {width:100%;}
+#banner img,#ban1 img {width:100%;}
+
+#banner{position:relative;}
+#banner button {position:absolute; top:50%; z-index: 999; width:35px;
+              height:35px; border-radius: 100%; background: rgba(0,0,0,0.4);
+              border:none; outline: none;transform: translateY(-50%);}
+              #banner button::before {font-family: "xeicon";color:#fff; font-size: 20px;}
+#banner button.slick-prev {left:50px; font-size: 0; color:transparent;}
+#banner button.slick-prev:before {content:"\e93d";}
+#banner button.slick-next {right:50px;font-size:0; color:transparent;}
+#banner button.slick-next:before {content:"\e940";}
+#banner {width:100%;}
+
+
+#banner .slick-dots {position:absolute;bottom:10px;left:50%;
+    transform:translateX(-50%);text-align:center;}
+#banner .slick-dots li{width:15px;height:15px;display:inline-block;margin-right:3px;}             
+#banner .slick-dots >li >button{font-size:0;color:#fff;
+               width:10px;height:10px; border:none;
+               background:#999; border-radius: 100%;}
+#banner .slick-dots >li.slick-active button {background:#000;}       
+
+
+
+
+
+#main2 {width:70%; margin:2rem auto;}
+#main2 ul {display:flex;}
+#main2 ul li {width:25%;padding-right:3px;}
+#main2 ul li img {width:100%;}
+#main2 h2 {text-align: center; margin:1rem 0;}
+
+
+footer {padding:10rem 0; text-align: center;background:#131313;color:#fff;font-size: 1rem;}
+
+
+@media screen and (max-width:640px){
+    #main ul, #main1 ul, #main2 ul {flex-wrap:wrap;}
+    #main ul li, #main1 ul li, #main2 ul li {width:50%;padding-right:3px;}
+
+}
